@@ -67,7 +67,7 @@ $(document).ready(function() {
       // because you are an awesome designer.
       fbq('track', 'Lead');
 
-			window.location.href = 'https://cayan-group.net/landing/ar/new/v1/istanbul/property101/ar/thanks.html';
+			// window.location.href = 'https://cayan-group.net/landing/ar/new/v1/istanbul/property101/ar/thanks.html';
 			subscribeButton.prop('disabled', false);
 		  })
 		  .fail(function(response) {
