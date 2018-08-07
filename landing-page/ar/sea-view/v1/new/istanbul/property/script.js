@@ -67,7 +67,7 @@ $(document).ready(function() {
       // because you are an awesome designer.
       fbq('track', 'Lead');
 
-			window.location.href = 'https://cayan-group.net/landing-page/ar/sea-view/v1/new/thanks.html';
+			window.location.href = 'https://cayan-group.net/landing-page/ar/sea-view/v1/new/istanbul/property/thanks.html';
 			subscribeButton.prop('disabled', false);
 		  })
 		  .fail(function(response) {
