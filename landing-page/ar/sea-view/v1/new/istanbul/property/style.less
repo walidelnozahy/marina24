@@ -1,0 +1,1171 @@
+@gredient : linear-gradient(62deg, #FBAB7E 0%, #F7CE68 50%, #F7CE68 100%);
+@font-face {
+    font-family: '29bukraRegular';
+    src: url('assets/fonts/29ltbukraregular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '29bukraLight';
+    src: url('assets/fonts/29ltbukralight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '29bukraBold';
+    src: url('assets/fonts/29ltbukrabold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DancingScript-Bold';
+    src: url('assets/fonts/DancingScript-Bold.ttf') format('truetype');
+}
+
+.row {
+    clear: both;
+}
+
+* {
+    font-family: '29bukraLight';
+}
+
+h1 {
+    font-family: '29bukraBold';
+}
+
+p {
+    line-height: 2em;
+}
+
+body,
+html {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    overflow-x: hidden;
+}
+.contact-us-bar {
+    position: fixed;
+    display: none;
+    justify-content: space-between;
+    bottom: 0px;
+    z-index: 200;
+    width: 100%;
+    // background-color: red;
+    height: 60px;
+    text-align: center; //  box-shadow: 0px 0px 100px 0 rgba(0, 0, 0, 0.2);
+    transform: all .3s ease-in;
+    @media (max-width: 992px) {
+        display: flex;
+    }
+    a {
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
+        color: #fff;
+        margin-right: 10px;
+        // position: fixed;
+        transform: translateY(-20px);
+        cursor: pointer;
+        box-shadow: 0 0 0 #fff;
+        display: flex;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        flex-direction: column;
+        text-decoration: none;
+        background-color: #00cc00;
+        animation: pulse 1s infinite;
+        animation-name: pulse;
+        &#go-to-fill-form {
+            // background-color: @blue;
+            margin-left: 30px;
+            background-image: @gredient;
+
+        }
+        @keyframes pulse {
+            0% {
+                -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+            }
+            70% {
+                -moz-box-shadow: 0 0 0 10px transparent;
+                box-shadow: 0 0 0 10px transparent;
+            }
+            100% {
+                -moz-box-shadow: 0 0 0 0 transparent;
+                box-shadow: 0 0 0 0 transparent;
+            }
+        }
+        svg {
+            fill: #fff;
+            width: 60%;
+            height: 60%;
+            margin: auto;
+            // display: none;
+
+
+        }
+        &.last-link {
+            border-right: none;
+        }
+        i {
+            font-size: 40px;
+            opacity: 1;
+            color: #fff;
+            margin: auto;
+        }
+    }
+}
+#header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    // .line {
+    //     position: absolute;
+    //     right: 0;
+    //     height: 500px;
+    //     margin-top: 0px;
+    //     z-index: 100;
+    //     transform: translateX(5px);
+    // }
+    .header-social {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 20px;
+        transform: translateY(-50%);
+        z-index: 2;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        // background-color: blue;
+        justify-content: space-between;
+        hr {
+            transform: rotateY(90deg);
+            width: 2000px;
+            // transform: translateX(-100px);
+            // height: 200px;
+        }
+
+        a {
+            width: 20px;
+            // background-color: red;
+        svg {
+            width: 20px;
+            height: auto;
+            // margin-top: 30px;
+
+        }
+    }
+    }
+    .header-logo {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 2;
+        width: 100%;
+        height: 80px;
+        // background-color: red;
+        .call-us {
+            float: right;
+            width: 300px;
+            // display: flex;
+            // height: 60px;
+            margin-right: 80px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            svg {
+                width: 250px;
+                height: auto;
+                // transform: translateY(-6px);
+                margin-right: 10px;
+
+            }
+            .call-us-number {
+                p {
+                    margin: 0;
+                    color: #fff;
+                    font-size: 0.8em;
+                }
+            }
+        }
+        img {
+            width: 80px;
+            height: auto;
+            
+        }
+    }
+    .header-video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            pointer-events: none;
+        }
+    }
+}
+
+#first-section {
+    // display: inline-block;
+    // clear: both;
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    .first-section-each {
+        width: 100%;
+        height: auto;
+        // overflow: hidden
+        // display: flex;
+        // flex-direction: row;
+        .each {
+            // transform: translateY(100px);
+            display: flex;
+            width: 50%;
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            .text-inner {
+                margin: auto;
+                padding: 50px 100px;
+                text-align: right;
+                h1 {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        right: -30px;
+                        top: 3px;
+                        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+                    }
+                }
+
+
+                p {
+                    // line-height: 2em;
+                }
+                .offers {
+                    display: flex;
+
+                    h2 {
+                        font-family: '29bukraBold';
+                        font-size: 1.5em;
+                        text-align: center;
+                        display: inline;
+    
+                        // color: #fff;
+                        margin:  auto;
+                        border-right: 2px solid #FBAB7E;
+                        // border-left: 2px solid #FBAB7E;
+                        display: table;
+                        // border-radius: 5px;
+                        padding: 10px 20px;
+                        background-color: #fff;
+                        transform: translateY(20px);
+                        background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 50%, #F7CE68 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        &:first-child {
+                    border-left: 2px solid #FBAB7E;
+                        }
+                    }
+                }
+            }
+            &.left {
+                float: left;
+            }
+            &.right {
+                float: right;
+            }
+            &.image-1 {
+                background-image: url("http://res.cloudinary.com/cayangroup9292/image/upload/c_scale,w_960/v1533370635/04.jpg");
+            }
+            &.image-2 {
+                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522439399/projects/cayan-11/8.jpg");
+            }
+            &.image-3 {
+                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1532622541/projects/cayan-148/5.jpg");
+            }
+            &.text {
+                // float: right;
+                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533036719/landing-page/polygon.jpg");
+            }
+        }
+    }
+}
+
+#new-life {
+    min-height: 100vh;
+    width: 100%;
+    display: flex; // display: none;
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533038134/projects/cayan-107/14.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .new-life-text {
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        svg {
+            stroke-width: 2;
+            width: 90%;
+            margin: auto;
+            &.play-svg {
+                fill-opacity: 0;
+                fill: #fff;
+                stroke-dasharray: 1200px;
+                stroke-dashoffset: 1200px;
+                animation-name: draw;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+            }
+
+        }
+        @keyframes draw {
+            0% {
+                stroke-dashoffset: 1200px;
+                fill-opacity: 0;
+            }
+            50% {
+                stroke-dashoffset: 600pxs;
+                fill-opacity: 0.5;
+            }
+            100% {
+                stroke-dashoffset: 0px;
+                fill-opacity: 1;
+            }
+        }
+        h1 {
+            font-size: 5em;
+            font-family: 'DancingScript-Bold';
+        }
+    }
+}
+
+#clouds {
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533038545/landing-page/above-atmosphere-clouds-37728.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    img {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    .clouds-text {
+        width: 100%; // background-color: red;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+        .clouds-text-each {
+            // background-color: blue;
+            margin-top: 400px;
+            text-align: right;
+            width: 30%;
+            display: inline-block;
+            position: relative;
+            color: #fff; // background-color: red;
+            &.second1 {
+                transform: translateY(200px);
+                svg {
+                    transform: translate(220px, -380px);
+                }
+            }
+            svg {
+                position: absolute;
+                right: 0;
+                transform: translate(220px, -180px);
+            }
+            .text {
+                h2 {
+                    font-family: '29bukraRegular';
+                    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+                    line-break: 2em;
+                    position: relative;
+                    &::before {
+                        content: "01";
+                        position: absolute; // width: 20px;
+                        // height: 20px;
+                        right: -50px;
+                        top: -10px; // background-color: #fff;
+                        font-size: 1.5em;
+                        padding: 0 0 3px 0;
+                        border-bottom: 3px solid #fff;
+                    }
+                    &.second-h2 {
+                        &::before {
+                            content: "02";
+                        }
+                    }
+                    &.third-h2 {
+                        &::before {
+                            content: "03";
+                        }
+                    }
+                }
+                p {
+                    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+    
+}
+.apartments {
+    // transform: translateY(30vh);
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533038545/landing-page/above-atmosphere-clouds-37728.jpg");
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: rotateZ(180deg);
+    }
+    .apartments-each {
+        width: 400px;
+        height: 700px;
+        position: relative;
+        z-index: 4;
+        top: -100px;
+        // border-width: 5px;
+        // border-style: solid;
+        // border-image: @gredient;
+        // -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+        margin: auto;
+        background-image: @gredient;
+        box-shadow: 3px 4px 8px 3px rgba(0,0,0,0.10);
+        // text-align: center;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 95%;
+            height: 97%;
+            background: #fff;
+            z-index: 3;
+            top: 1.5%;
+            left: 2.5%;
+            margin: auto;
+        }
+        .apartments-image {
+            position: relative;
+            z-index: 4;
+            
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 95%;
+            left: 2.5%;
+            top: -5px;
+            height: 400px;
+            &.first {
+                background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1533046748/projects/cayan-107/interior/Mer_0012.jpg');
+            }
+            &.second {
+                background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1533047733/projects/cayan-107/interior/Mer_0014.jpg');
+            }
+            &.third {
+                background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1525096327/projects/cayan-107/interior/2.jpg');
+            }
+            p {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+                display: table;
+                margin-left: 20px;
+                margin-top: 15px;
+                font-size: 1.2em;
+                // margin-top: 0;
+            }
+        }
+        .apartments-text {
+            height: 300px;
+            // background-color: blue;
+            position: relative;
+            z-index: 4;
+            left: 0%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            .area {
+                margin: auto;
+                width: 100%;
+                .number {
+                    background-image: @gredient;
+                    padding: 3px;
+                    width: 150px;
+                    display: inline-block;
+                    p {
+                        width: 100%;
+                        position: relative;
+                        // border: 3px solid red;
+                        // margin-right: 10px;
+                        // padding: 10px 20px;
+                        font-size: 1.3em;
+                        font-weight: 800;
+                        background-color: #fff;
+                        color: #222222;
+                        letter-spacing: 0.1em;
+                        margin: 0;
+                        font-family: '29bukraRegular';
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 20px;
+                            height: 90%;
+                            background: #fff;
+                            z-index: 0;
+                            top: 5%;
+                            right: -12px;
+                            margin: auto;
+                        }
+                    }
+                }
+                p {
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+
+
+            }
+            .price {
+                position: relative;
+                bottom: 30px;
+                margin: auto;
+                text-align: center;
+                // width: 100%;
+                // background-color: red;
+                h2 {
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    margin: auto;
+                    display: table;
+                    // background-image: @gredient;
+                    color: #fff;
+                    letter-spacing: 0.5em;
+                   
+                    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+                    box-shadow: 3px 4px 8px 3px rgba(0,0,0,0.10);
+                    border-radius: 7px;
+                    // font-family: '29bukraBold';
+                }
+            }
+        }
+    }
+}
+#new-life-2 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533047747/projects/cayan-107/interior/mid_0015.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    .text {
+        box-shadow: 3px 4px 8px 3px rgba(0,0,0,0.5);
+        position: absolute;
+        width: 500px;
+        bottom: 10%;
+        left: 10%;
+        background: none;
+        text-align: right;
+        padding: 20px 25px;
+        border: 5px solid #FBAB7E;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 95%;
+            height: 90%;
+            background: #fff;
+            z-index: 0;
+            top: 5%;
+            left: 2.5%;
+            margin: auto;
+        }
+        h2 {
+            font-family: '29bukraBold';
+            position: relative;
+            z-index: 3;
+        }
+        p {
+            position: relative;
+            z-index: 3;
+
+        }
+
+    }
+}
+#cayan {
+    position: relative;
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533048543/projects/cayan-107/27.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3); 
+    }
+    .logo {
+        margin: auto;
+        width: 50%;
+        // background-color: blue;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    .text {
+        margin: auto;
+        width: 50%;
+        // background-color: red;
+        text-align: right;
+        padding-right: 100px;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        // background-color: red;
+        // height: 100%;
+        // display: flex;
+        // flex-direction: column;
+
+        h1 {
+            // margin: auto;
+            display: table;
+            padding: 10px;
+            float: right;
+            font-size: 2.3em;
+            border-bottom: 5px solid #FBAB7E;
+            border-right: 5px solid #FBAB7E;
+        }
+        p {
+            // margin: auto;
+            float: right;
+            padding: 0 0 0 300px;
+        }
+        .button {
+            margin: auto;
+            color: #fff;
+            background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+            box-shadow: 3px 4px 8px 3px rgba(0,0,0,0.10);
+            border-radius: 7px;
+            padding: 10px 40px;
+            float: right;
+            bottom: 0;
+            z-index: 100;
+            right: 0;
+            a {
+                color: #fff;
+                text-decoration: none;
+    
+            }
+        }
+    }
+
+    
+}
+#contact {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533036719/landing-page/polygon.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .image {
+        width: 60%;
+        height: 100%;
+        position: relative;
+        // background-color: blue;
+        img {
+            height: 80%;
+            display: inline-block;
+            // background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+        }
+        .fadi-talk {
+            // display: none;
+            position: absolute;
+            right: 10%;
+            width: 50%;
+            text-align: center;
+            top: 20%;
+            background-color: #fff;
+            border-radius: 40px 40px 40px 0;
+            box-shadow: 3px 4px 8px 3px rgba(0,0,0,0.10); 
+            padding: 5px 10px;
+            &.fadi-talk2 {
+                top: 35%;
+            }
+            &.fadi-talk3 {
+                top: 50%;
+            }            
+        }
+    }
+    .form {
+        width: 600px;
+        height: 700px;
+        position: relative;
+        right: 100px;
+        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1533050383/landing-page/Group_2.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center;
+
+        form {
+            background-color: #fff;
+            width: 90%;
+            height: 78%;
+            margin: auto;
+            position: relative;
+            top: 55px;
+            text-align: center;
+            h2 {
+                display: none;
+            }
+            .input-wrapper {
+                width: 100%;
+                margin-right: 10px;
+                text-align: right;
+
+                
+                .each-input {
+                    // padding: 10px;
+                    transform: translate(-20px,10px);
+                    width: 100%;
+                    margin-top: 30px;
+                    margin-right: 100px;
+                    input {
+                        height: 30px;
+                        width: 80%;
+                        border: none;
+                        border-bottom: 1px solid #222222;
+                        font-size: 1.2em;
+                        text-align: right;
+                        direction: rtl;
+                        
+
+                    }
+                    select {
+                        padding: 10px;
+                        width: 80%;
+                        border: none;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -webkit-border-radius: 0px;
+                        background: none; 
+                        border-radius: 0;
+                        border-bottom: 1px solid #222222;
+                        text-align: right;
+                        direction: rtl;
+                    }
+                }
+            }
+            button {
+                margin: auto;
+                color: #fff;
+                border: none;
+                padding: 10px 40px;
+                font-family: '29bukraRegular';
+                font-size: 1.2em;
+                transform: translateY(50px);
+                background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 50%, #F7CE68 100%);
+            }
+            .contact-whatsapp {
+                transform: translateY(50px);
+                display: none;
+                svg {
+                    width: 50px;
+                    height: 50px;
+                }
+                a {
+                    text-decoration: none;
+                    font-family: '29bukraBold';
+                }
+            }
+
+        }
+        
+    }
+}
+@media (max-width: 992px) {
+    #header {
+        height: auto;
+        min-width: 100% !important;
+        
+        .header-social {
+            display: none;
+        }
+        .header-logo {
+            height: 30px;
+            width: 30px;
+
+            .call-us {
+                display: none;
+            }
+            img {
+                width: 30px;
+            }
+        }
+        .header-video {
+            position: relative;
+            // min-height: 100%;
+            min-width: 100% !important;
+            video {
+                max-width: 100%;
+                // max-width: 100%;
+                // min-height: 100%;
+                transform: translateY(0px);
+            }   
+        }
+    }
+    #first-section {
+        // transform: translateY(-5px);
+        // border-top: 3px solid #FBAB7E;
+        .first-section-each {
+            .each {
+                float: none;
+                width: 100%;
+                height: 600px;
+                padding: 0px; 
+                &.image {
+                    height: 200px;
+                }
+                &.left,&.right {
+                    float: none;
+                }
+                .text-inner {
+                    padding: 0px;
+                    h1 {
+                        transform: translateX(-45px);
+                    }
+                    p {
+                        width: 95%;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    #new-life {
+        min-height: 50vh;
+        transform: translateY(-5px);
+        // display: flex;
+        position: relative;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.2);
+
+        }
+        .new-life-text {
+            .second-svg {
+                // height: 80px;
+            }
+            svg {
+                transform: translateY(-30px);
+                width: 100%;
+                height: 80px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    }
+    #clouds {
+        height: 100vh;
+        transform: translateY(-5px);
+        img {
+            top: -100px;
+        }
+        .clouds-text {
+            display: flex;
+            flex-direction: column-reverse;
+            transform: translateY(20px);
+            .clouds-text-each {
+                margin-top: 0;
+                width: 100%;
+                &.second1 {
+                    transform: translateY(0px);
+                }
+                .text {
+                    padding: 0 5px;
+                    h2 {
+                        transform: translateX(-60px);
+                    }
+                    p {
+                        width: 95%;
+                        font-size: 0.9em;
+                    }
+                }
+                svg {
+
+                    display: none;
+                }
+            }
+        }
+
+    }
+    .apartments {
+        flex-direction: column;
+        transform: translateY(-5px);
+        .apartments-each {
+            width: 100%;
+            top: 0;
+        }
+    }
+    #new-life-2 {
+        height: 70vh;
+        .text {
+            // bottom: 10;
+            // position: relative;
+            box-sizing: border-box;
+            // border: 2px solid #FBAB7E;
+            max-width: 100%;
+            left: 0;
+            padding: 0;
+            h2 {
+                font-size: 1em;
+                transform: translateX(-20px);
+            }            
+            p {
+                font-size: 0.9em;
+                // transform: translateX(-10px);
+                width: 95%;
+                line-height: 2em;
+                padding: 0 5px;
+            }   
+        }
+    }
+    #cayan {
+        flex-direction: column;
+        padding-top: 20px;
+        height: 120vh;
+        .logo {
+            width: 50%;
+            img {
+                max-width: 100%;
+            }
+        }
+        .text {
+            padding-right: 0;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            h1 {
+                font-size: 1.8em;
+                border-right: 0;
+                float: none;
+                margin: auto;
+            }
+            p {
+                float: none;
+                padding: 10px;
+                text-align: right;
+            }
+            .button {
+                margin: auto;
+                color: #fff;
+                float: none;
+                background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+                box-shadow: 3px 4px 8px 3px rgba(0,0,0,0.10);
+                border-radius: 7px;
+                padding: 10px 20px;
+                // position: relative;
+                // z-index: 100;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+    
+                }
+            }
+        }
+
+    }
+    #contact {
+        height: auto;
+        flex-direction: column-reverse;
+
+        .image {
+            display: none;
+            width: 100%;
+        }
+        .form {
+            width: 100%;
+            right: 0px;
+            background: none;
+            height: 580px;
+            form {
+                height: 100%;
+                top: 10px;
+                border: 5px solid #FBAB7E;
+
+                h2 {
+                    display: block;
+                    font-family: "29bukraBold"
+                }
+                .input-wrapper {
+                    .each-input {
+                        label {
+                            font-size: 0.9em;
+                        }
+
+                    }
+                }
+                button {
+                    font-size: 0.9em;
+                    transform: translateY(30px);
+                }
+                .contact-whatsapp {
+                    transform: translateY(30px);
+                    p {
+                        font-size: 0.9em;
+                    }
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    a {
+                        // font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 995px) and (max-width: 1500px) {
+    #header {
+        // display: none;
+    }
+    #first-section {
+        // transform: translateY(50px);
+        .each {
+            .text-inner {
+                padding: 10px 0px;
+                p {
+                    font-size: 0.9em;
+                }
+            } 
+        }
+    }
+    #clouds {
+        img {
+            top: -200px;
+        }
+        .clouds-text {
+            .clouds-text-each {
+                &.second1 {
+                    transform: translateY(220px);
+                    svg {
+                        transform: translate(320px, -380px);
+                    }
+                }
+                svg {
+                    transform: translate(320px, -180px);
+                }
+                .text {
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+    .apartments {
+        .apartments-each {
+            top: -100px;
+        }
+    }
+    #cayan {
+        .text {
+            p {
+                float: right;
+                padding: 0 0 0 100px;
+            }
+        }
+    }
+    #contact {
+        height: 90vh;
+        .fadi-talk {
+            display: none;
+        }
+        .form {
+            form {
+                height: 70%;
+                top: 75px;
+                button {
+                    transform: translateY(30px);
+                    padding: 5px 20px;
+                    font-size: .8em;
+                }
+                .contact-whatsapp {
+                    transform: translateY(30px);
+                    p {
+                        font-size: 0.8em;
+                    }
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
