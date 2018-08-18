@@ -258,10 +258,11 @@ body {
                 }
                 .offers {
                     display: flex;
+                    max-width: 100%;
 
                     h2 {
                         font-family: '29bukraBold';
-                        font-size: 1.5em;
+                        font-size: 1.4em;
                         text-align: center;
                         display: inline;
     
@@ -271,7 +272,7 @@ body {
                         // border-left: 2px solid #FBAB7E;
                         display: table;
                         // border-radius: 5px;
-                        padding: 10px 20px;
+                        padding: 10px 10px;
                         background-color: #fff;
                         transform: translateY(20px);
                         background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 50%, #F7CE68 100%);
@@ -293,14 +294,14 @@ body {
                 background-image: url("http://res.cloudinary.com/cayangroup9292/image/upload/c_scale,w_960/v1533370635/04.jpg");
             }
             &.image-2 {
-                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522439399/projects/cayan-11/8.jpg");
+                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,q_auto:eco,w_1200/v1522439399/projects/cayan-11/8.jpg");
             }
             &.image-3 {
-                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1532622541/projects/cayan-148/5.jpg");
+                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,q_auto:eco,w_1200/v1532622541/projects/cayan-148/5.jpg");
             }
             &.text {
                 // float: right;
-                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533036719/landing-page/polygon.jpg");
+                background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,q_auto:eco,w_1200/v1533036719/landing-page/polygon.jpg");
             }
         }
     }
@@ -532,7 +533,7 @@ body {
                 .number {
                     background-image: @gredient;
                     padding: 3px;
-                    width: 150px;
+                    width: 180px;
                     display: inline-block;
                     p {
                         width: 100%;
@@ -844,7 +845,8 @@ body {
 @media (max-width: 992px) {
     #header {
         height: auto;
-        min-width: 100% !important;
+        min-height: 100% !important;
+        
         
         .header-social {
             display: none;
@@ -873,7 +875,7 @@ body {
         }
     }
     #first-section {
-        // transform: translateY(-5px);
+        transform: translateY(-5px);
         // border-top: 3px solid #FBAB7E;
         .first-section-each {
             .each {
@@ -889,6 +891,7 @@ body {
                 }
                 .text-inner {
                     padding: 0px;
+                    max-width: 100%;
                     h1 {
                         transform: translateX(-45px);
                     }

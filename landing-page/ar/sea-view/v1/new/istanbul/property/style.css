@@ -210,16 +210,17 @@ body {
 }
 #first-section .first-section-each .each .text-inner .offers {
   display: flex;
+  max-width: 100%;
 }
 #first-section .first-section-each .each .text-inner .offers h2 {
   font-family: '29bukraBold';
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-align: center;
   display: inline;
   margin: auto;
   border-right: 2px solid #FBAB7E;
   display: table;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: #fff;
   transform: translateY(20px);
   background: linear-gradient(62deg, #fbab7e 0%, #f7ce68 50%, #f7ce68 100%);
@@ -239,13 +240,13 @@ body {
   background-image: url("http://res.cloudinary.com/cayangroup9292/image/upload/c_scale,w_960/v1533370635/04.jpg");
 }
 #first-section .first-section-each .each.image-2 {
-  background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522439399/projects/cayan-11/8.jpg");
+  background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,q_auto:eco,w_1200/v1522439399/projects/cayan-11/8.jpg");
 }
 #first-section .first-section-each .each.image-3 {
-  background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1532622541/projects/cayan-148/5.jpg");
+  background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,q_auto:eco,w_1200/v1532622541/projects/cayan-148/5.jpg");
 }
 #first-section .first-section-each .each.text {
-  background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1533036719/landing-page/polygon.jpg");
+  background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,q_auto:eco,w_1200/v1533036719/landing-page/polygon.jpg");
 }
 #new-life {
   min-height: 100vh;
@@ -457,7 +458,7 @@ body {
 .apartments .apartments-each .apartments-text .area .number {
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 50%, #f7ce68 100%);
   padding: 3px;
-  width: 150px;
+  width: 180px;
   display: inline-block;
 }
 .apartments .apartments-each .apartments-text .area .number p {
@@ -729,7 +730,7 @@ body {
 @media (max-width: 992px) {
   #header {
     height: auto;
-    min-width: 100% !important;
+    min-height: 100% !important;
   }
   #header .header-social {
     display: none;
@@ -752,6 +753,9 @@ body {
     max-width: 100%;
     transform: translateY(0px);
   }
+  #first-section {
+    transform: translateY(-5px);
+  }
   #first-section .first-section-each .each {
     float: none;
     width: 100%;
@@ -767,6 +771,7 @@ body {
   }
   #first-section .first-section-each .each .text-inner {
     padding: 0px;
+    max-width: 100%;
   }
   #first-section .first-section-each .each .text-inner h1 {
     transform: translateX(-45px);
